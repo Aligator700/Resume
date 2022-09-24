@@ -7,60 +7,82 @@
     <meta name="keywords" content="Резюме, cv, разработчик, FrontEnd, Фронтэнд">
     <meta name="description" content="Резюме Фронтэнд разработчика">
     <title>Резюме Фронтэнд разработчика</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="imgs/Foto.jpg" alt="Моё фото" width="150px">
-    <h1>Олег</h1>
-
-    <p>Я <strong>FrontEnd разработчик.</strong></p>
-    <p>Я люблю <em> <strong>путешествовать</strong> на своей машинe 
-    <br>
-    и <strong>программировать.</strong></em>
-    </p>
-    
-    <strong>Мой </strong><a href="https://t.me/Aligator700" target="_blank">Telegram</a>
-    <h2>Мои хобби</h2>
-    <ul>
-        <li>Путешествия</li>
-        <li>Программирование</li>
-        <li>Сад</li>
-        <li>Дом</li>
-    </ul>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
+    <div class="container">
+        <div class="info">
+            <img src="imgs/Foto.jpg" alt="Моё фото" class="avatar">
+            <div class="info-text">
+                <h1>Олег</h1>
+                
+                <p><strong>Frontend разработчик.</strong></p>
+                <p>Люблю <em> <strong>путешествовать</strong> на своей машинe 
+                <br>
+                и <strong>программировать.</strong></em>
+                </p>
+                <div class="telegram">
+                    <strong>Мой </strong><a href="https://t.me/Aligator700" target="_blank">Telegram</a>
+                </div>
+            </div>
             
-        </thead>
-        <tbody>
-            <tr>
-                <td>СЦ ГринПринт</td>
-                <td>Сервисный инженер</td>
-                <td>С 2008 по настоящее время</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
         </div>
-        <div>
-            <label for="email">Ваше email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Программирование</li>
+                <!-- <li>Сад</li>
+                <li>Дом</li> -->
+            </ol>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" placeholder="Введите сообщение . . ." cols="25" rows="5"></textarea>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>СЦ ГринПринт</td>
+                        <td>Сервисный инженер</td>
+                        <td>С 2008 по настоящее время</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <button type="submit">Отправить!</button>
-    </form>
+        <div class="card bg-yellow">
+            <ul class="link-list">
+                <li><a href="">Получение профессии Frontend разработчика</a></li>
+                <li><a href="">Все курсы</a></li>
+            </ul>
+        </div>
+
+        
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваше email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" placeholder="Введите сообщение . . ." cols="25" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn">Отправить!</button>
+        </form>
+    </div>
     
 </body>
 </html>
