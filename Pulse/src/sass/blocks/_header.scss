@@ -3,12 +3,15 @@
     justify-content: space-between;
     align-items: center;
     &__logo {
-        width: 250px;
+        width: 260px;
+        padding: 0 5px;
+        // flex-shrink: 0
         img {
-            width: 100%;
+            width: 95%;
         }
     }
     &__official {
+        padding: 0 5px;
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -18,7 +21,8 @@
         span {
             display: block;
             font-size: 18px;
-            line-height: 29px;
+            line-height: 18px;
+            margin-top: 7px;
         }
     }
     &__phone {
@@ -36,8 +40,24 @@
         }
     }
     &__contacts {
+        padding: 0 5px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+}
+.header__official_mobile {
+    display: none;
+    padding: 10px 5px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    span {
+        font-size: 18px;
+        line-height: 18px;
+        // margin-top: 7px;
     }
 }
