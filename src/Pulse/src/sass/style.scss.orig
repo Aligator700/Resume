@@ -16,3 +16,4 @@ h1, h2 {
 @import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'base/media';
+@import 'blocks/consultacion';
