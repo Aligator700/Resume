@@ -7,6 +7,12 @@
     }
 }
 
+@media screen and (max-width: 1070px) {
+    .prev, .next {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 829px) {
     .advantages__block {
         max-width: 33.3%;
@@ -24,6 +30,13 @@
         width: 650px;
         img {
             width: 650px;
+        }
+    }
+    .reviews__item {
+        flex-direction: column;
+        text-align: center;
+        & img {
+            margin: 0 auto 60px;
         }
     }
 }
