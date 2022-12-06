@@ -116,6 +116,9 @@
             width: 400px;
         }
     }
+    .footer__info {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -158,8 +161,11 @@
     .promo__header {
         font-size: 40px;
     }
-    .footer__info {
+    .modal {
         width: 95%;
+    }
+    .feed-form_m-0-40 {
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 374px) {
@@ -179,5 +185,11 @@
         img {
             width: 300px;
         }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .feed-form {
+        width: 280px;
     }
 }
