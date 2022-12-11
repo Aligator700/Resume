@@ -106,6 +106,10 @@
         img {
             width: 450px;
         }
+    } 
+    .modal__close {
+        right: 30px;
+        top: 10px;
     }
 }
 
@@ -163,9 +167,6 @@
     }
     .modal {
         width: 95%;
-    }
-    .feed-form_m-0-40 {
-        margin: 0 auto;
     }
 }
 @media screen and (max-width: 374px) {
