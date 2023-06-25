@@ -1,9 +1,9 @@
 $('form').submit(function(e) {
     e.preventDefault();
 
-    if(!$(this).valid()) {
-        return;
-    }
+    // if(!$(this).valid()) {
+    //     return;
+    // }
 
     $.ajax({
         type: "POST",
@@ -11,10 +11,10 @@ $('form').submit(function(e) {
         data: $(this).serialize()
     }).done(function() {
         $(this).find("input").val("");
-        $('#consultation, #order').fadeOut();
-        $('#overlay, #thanks').fadeIn('slow');
+        // $('#consultation, #order').fadeOut();
+        // $('#overlay, #thanks').fadeIn('slow');
 
-        $('form').trigger('reset');
+        // $('form').trigger('reset');
     });
     return false;
 });
